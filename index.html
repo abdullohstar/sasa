@@ -1,52 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-</head>
-<style>
-    table{
-       border: 1px solid black;
-       border-collapse: collapse;
-       height: 250px;
-       width: 1200px;
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <style>
+    body{
+        background-color: floralwhite
+
     }
-</style>
-<table border="1" style="height: 250px;">
-    <thead style="background-color: aqua;">
-        <tr>
-            <th rowspan="2">name</th>
-            <th colspan="2">contact information</th>
-            
-            <th rowspan="2">country</th>
-        </tr>
-        <tr>
-            
-            <th>email</th>
-            <th>phone</th>
-            
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>john doe</td>
-            <td>john@example.com</td>
-            <td>+9998947259771</td>
-            <td>usa</td>
-        </tr> 
-        <tr>
-            <td>jane smith</td>
-            <td>jane@example.com</td>
-            <td rowspan="2">+998947259771</td>
-            <td rowspan="2">canada</td>
-        </tr>
-        <tr>
-            <td>mike johnson</td>
-            <td>mike@example.com</td>
-        </tr>
-    </tbody>
-</table>
-</body>
-</html>
+    
+ </style>
+ <body>
+   <form action="">
+    <label for="ism">ism </label> <br>
+    <input type="text" id="ism" required placeholder="ismingizni kiriting" required>
+    <br>
+    <br>
+    
+
+    <label for="parol">parol</label>
+    <input type="password" id="parol" placeholder="parolingizni kiriting" required> 
+    <br>
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" placeholder="emailingizni kiriting" required> 
+    <br> 
+    <br>
+    <label for="radio">ayol</label>
+    <input type="radio" id="radio" name="radi" required>
+    <label for="radio">erkak</label>
+  
+    <input type="radio" id="radio" name="radi" required>
+    <br>
+    <label for="date" id="date">sana</label> <br>
+    <input type="date" >
+    <br>
+    <br>
+    <label for="ggg">range</label>
+    <input type="range" id="ggg" required>
+    <label for="time">vaqt</label>
+    <input type="time" id="time">
+    <br>
+    <br>
+    <label for="hhh">hafta</label>
+    <input type="week" id="hhh"> 
+    <br>
+     <br>
+     <label for="area">fikrlar va izohlar uchun</label>
+     <textarea name="area" id="area" placeholder="izoh"></textarea>
+     <select>
+        <option value="usa">aqsh</option>
+        <option value="russia" selected>rossiya</option>
+        <option value=""></option>
+     </select> 
+     <br>
+     <br>
+<button type="submit">submit</button>
+
+   </form> 
+
+ </body>
+ </html>
