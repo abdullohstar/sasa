@@ -7,39 +7,71 @@
    <link rel="stylesheet" href="style.css">
  </head>
  <body>
+   <div>
    <form action="">
       <h1 style="color: red;">personal details</h1>
       <label for="name">name</label>
-      <input type="name" id="name">
+      <input type="name" id="name" required>
       <br>
       <br>
       <label for="password">password</label>
-      <input type="password" id="password">
+      <input type="password" id="password" required>
       <br>
       <br>
       <label for="email">email id</label>
-      <input type="email" id="email">
+      <input type="email" id="email" required>
       <br>
       <br>
      
      <p>gender: <label for="radiu">male</label> 
-      <input type="radio" id="radiu">
-      <label for="radidu">female</label>
-      <input type="radio" id="radidu"
+      <input type="radio" id="radiu" required name="bir1">
+      <label for="radidu">female </label>
+      <input type="radio" id="radidu " name="bir1">
       </p> 
       <br>
       <br>
       <label for="number">#contact: </label>
-      <input type="number" id="number">
+      <input type="text" id="number" required>
       <h1 style="color: red;">educational qualification</h1>
-      <select>  
-      <option value="bachelor">bachelor's degree</option>
-      <option value="associate">associate's degree</option>
-      <option value="master">master's degree</option>
+        
+        <label for="dfd">degree</label>  
+      <select id="dfd" name="degree" required aria-placeholder="fehfoew">
+        <option value="" disabled>--select group--</option>
+      <option value="associate" >associate's degree</option>
+      <option value="master ">master's degree </option>
       </select>
+      <br>
+      <br>
+      <label for="engineering">engineering</label>
+      <select name="engineering" id="engineering">
+         <option value="" disabled>--select group--   </option>
+         <option value="">mechanical engineering</option>
+         <option value="">civil engineering</option>
+         <option value="">electrical engineering</option>
+      </select>
+      <br>
+      <br>
+      hobbies:
+      <label for="fffff">playing chess</label>
+      <input type="checkbox" id="fffff" name="hhh">
+      <label for="fffdff">reading books</label>
+      <input type="checkbox" id="fffdff" name="hhh">
+
+     <br>
+     <br>
+      <h1 style="color: red;;"><pre>     address</pre></h1>
+      <textarea name="" id="" style="width: 250px; height: 70px;"></textarea>
+      <br>
+      <br>
+      <label for="file">attach resume:</label>
+      <input type="file" id="file">
+      <br>
+      <br>
+      <button type="submit">submit</button>
 
 
     
    </form>
+   </div>
  </body>
  </html>
